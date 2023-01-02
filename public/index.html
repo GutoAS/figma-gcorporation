@@ -9,10 +9,11 @@
   </head>
   <body>
     <!-- NAVBAR SECTION -->
+
     <header class="sticky top-0 w-full bg-[#FFFEF5] z-50">
       <nav
         id="nav"
-        class="z-1 container mx-auto md:flex md:flex-row pt-[41px] md:items-center md:justify-between"
+        class="px-2 md:px-0 z-1 container mx-auto md:flex md:flex-row pt-[41px] md:items-center md:justify-between"
       >
         <div class="flex justify-between items-center mx-2">
           <img src="img/logo.svg" alt="" />
@@ -76,9 +77,8 @@
     </header>
 
     <!-- HOME SECTION -->
-    <section
-      class="bg-[#FFFEF5] w-full relative z-10 overflow-hidden min-h-screen"
-    >
+
+    <section class="bg-[#FFFEF5] w-full relative z-10 overflow-hidden pb-36">
       <div
         class="flex md:flex-row flex-col items-center justify-center container mx-auto"
       >
@@ -89,9 +89,9 @@
             We are <br />
             Creative agency
           </h1>
-          <p class="py-8 max-w-sm">
-            Agency is one of the leading companies in Vietnam in brand
-            adevertising, marketing, public relations.
+          <p class="py-8 max-w-sm text-[##333333]">
+            Agency is one of the leading companies in Mozambique in brand
+            advertising, marketing, public relations.
           </p>
           <button
             class="bg-[#6D58EF] w-[170px] h-[47px] rounded-3xl text-white font-[700]"
@@ -103,7 +103,7 @@
         <div class="flex-1 relative flex justify-center items-center pt-4">
           <img
             src="img/coworkers.png"
-            class="md:w-[31.375rem] md:h-auto w-[14.6875rem] h-auto relative"
+            class="md:w-[31.375rem] w-[14.6875rem] h-auto relative"
             alt="Coworkers"
           />
           <div
@@ -140,15 +140,114 @@
       <img
         src="img/CombinedShape.svg"
         alt=""
-        class="absolute top-[20%] left-[10%] -z-30 hidden md:block"
+        class="absolute md:top-[20%] md:left-[10%] left-0 top-0 -z-30"
       />
       <img
         src="img/CombinedShape.svg"
         alt=""
-        class="absolute bottom-[20%] right-[10%] -z-30 hidden md:block"
+        class="absolute md:bottom-[20%] md:right-[10%] bottom-0 right-0 -z-30"
       />
     </section>
 
+    <!-- ABOUT US SECTION -->
+
+    <section
+      id="about"
+      class="bg-[#FFFFFF] w-full relative z-10 overflow-hidden min-h-screen p-16"
+    >
+      <div class="flex md:flex-row flex-col container mx-auto">
+        <div class="flex justify-center items-center flex-1">
+          <img
+            src="img/coworkers2.png"
+            alt="Meeting"
+            class="md:w-[29.625rem] w-[15.5625] h-auto relative"
+          />
+        </div>
+
+        <div class="flex-1 w-full h-full md:pl-16 md:pt-6">
+          <h1 class="text-[#4F9EEC] text-lg font-[700]">ABOUT US</h1>
+          <h2
+            class="py-5 font-[700] md:text-6xl text-3xl md:leading-[4.5rem] text-[#333333]"
+          >
+            We are 20 year-old creative agency
+          </h2>
+          <p class="text-[#A4A4A4] text-xl max-w-md font-[400] leading-8">
+            Whatever the challenge, we have the means, knowledge, and experience
+            to act as your full-service strategic partner.
+          </p>
+          <ul class="py-11">
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-flex"
+              >
+                <path
+                  opacity="0.3"
+                  d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.63619 23.3638 2.66666 16 2.66666C8.63621 2.66666 2.66667 8.63619 2.66667 16C2.66667 23.3638 8.63621 29.3333 16 29.3333Z"
+                  fill="#6D58EF"
+                />
+                <path
+                  d="M14.1067 20.7733C13.84 20.7733 13.5867 20.6667 13.4 20.48L9.62667 16.7067C9.24 16.32 9.24 15.68 9.62667 15.2933C10.0133 14.9067 10.6533 14.9067 11.04 15.2933L14.1067 18.36L20.96 11.5067C21.3467 11.12 21.9867 11.12 22.3733 11.5067C22.76 11.8933 22.76 12.5333 22.3733 12.92L14.8133 20.48C14.6267 20.6667 14.3733 20.7733 14.1067 20.7733Z"
+                  fill="#6D58EF"
+                />
+              </svg>
+              Humanistic values to brands.
+            </li>
+            <li class="py-4">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-flex"
+              >
+                <path
+                  opacity="0.3"
+                  d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.63619 23.3638 2.66666 16 2.66666C8.63621 2.66666 2.66667 8.63619 2.66667 16C2.66667 23.3638 8.63621 29.3333 16 29.3333Z"
+                  fill="#6D58EF"
+                />
+                <path
+                  d="M14.1067 20.7733C13.84 20.7733 13.5867 20.6667 13.4 20.48L9.62667 16.7067C9.24 16.32 9.24 15.68 9.62667 15.2933C10.0133 14.9067 10.6533 14.9067 11.04 15.2933L14.1067 18.36L20.96 11.5067C21.3467 11.12 21.9867 11.12 22.3733 11.5067C22.76 11.8933 22.76 12.5333 22.3733 12.92L14.8133 20.48C14.6267 20.6667 14.3733 20.7733 14.1067 20.7733Z"
+                  fill="#6D58EF"
+                />
+              </svg>
+              Humane partner of businesses
+            </li>
+            <li>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="inline-flex"
+              >
+                <path
+                  opacity="0.3"
+                  d="M16 29.3333C23.3638 29.3333 29.3333 23.3638 29.3333 16C29.3333 8.63619 23.3638 2.66666 16 2.66666C8.63621 2.66666 2.66667 8.63619 2.66667 16C2.66667 23.3638 8.63621 29.3333 16 29.3333Z"
+                  fill="#6D58EF"
+                />
+                <path
+                  d="M14.1067 20.7733C13.84 20.7733 13.5867 20.6667 13.4 20.48L9.62667 16.7067C9.24 16.32 9.24 15.68 9.62667 15.2933C10.0133 14.9067 10.6533 14.9067 11.04 15.2933L14.1067 18.36L20.96 11.5067C21.3467 11.12 21.9867 11.12 22.3733 11.5067C22.76 11.8933 22.76 12.5333 22.3733 12.92L14.8133 20.48C14.6267 20.6667 14.3733 20.7733 14.1067 20.7733Z"
+                  fill="#6D58EF"
+                />
+              </svg>
+              Creative – Vanguard – Artistic
+            </li>
+          </ul>
+          <button
+            class="bg-[#6D58EF] w-[170px] h-[48px] rounded-3xl text-white font-[700]"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
     <!-- ! script -->
     <script
       src="https://kit.fontawesome.com/8215a2ae25.js"
