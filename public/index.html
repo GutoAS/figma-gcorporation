@@ -8,74 +8,123 @@
     <title>Agency</title>
   </head>
   <body>
-    <main>
-      <section class="w-full fixed bg-[#FFFEF5]">
-        <!-- NAVBAR SECTION -->
-        <nav
-          id="nav"
-          class="container mx-auto md:flex md:flex-row pt-[41px] md:items-center md:justify-between"
-        >
-          <div class="flex justify-between items-center mx-2">
-            <img src="img/logo.svg" alt="" />
-            <span
-              id="burger"
-              class="md:hidden w-[48px] h-[48px] bg-[#6D58EF] flex items-center justify-center rounded-full text-3xl text-[#D8D8D8] cursor-pointer"
-            >
-              <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
-            </span>
-          </div>
-          <ul
-            id="menu"
-            class="md:flex md:flex-row md:w-[446px] md:h-[24px] w-full left-0 md:py-0 py-4 md:pl-0 pl-7 md:justify-evenly font-normal text-lg text-[#333333] absolute md:z-auto md:static md:opacity-100 opacity-0 top-[-400px] trasition-all ease-in-out duration-500"
+    <!-- NAVBAR SECTION -->
+    <header class="sticky top-0 w-full bg-[#FFFEF5] z-10">
+      <nav
+        id="nav"
+        class="z-1 container mx-auto md:flex md:flex-row pt-[41px] md:items-center md:justify-between"
+      >
+        <div class="flex justify-between items-center mx-2">
+          <img src="img/logo.svg" alt="" />
+          <span
+            id="burger"
+            class="md:hidden w-[48px] h-[48px] bg-[#6D58EF] flex items-center justify-center rounded-full text-3xl text-[#D8D8D8] cursor-pointer"
           >
-            <li
-              class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
-            >
-              Home
-            </li>
-            <li
-              class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
-            >
-              Services
-            </li>
-            <li
-              class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
-            >
-              Portfolio
-            </li>
-            <li
-              class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
-            >
-              Career
-            </li>
-            <li
-              class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
-            >
-              About Us
-            </li>
-          </ul>
-          <div class="hidden md:block w-[160px] h-[48px]">
-            <span
-              class="bg-gray-100 w-[48px] h-[48px] inline-flex rounded-full items-center justify-center"
-            >
-              <i class="fa-brands fa-facebook-f"></i
-            ></span>
-            <span
-              class="bg-gray-100 w-[48px] h-[48px] inline-flex rounded-full items-center justify-center"
-            >
-              <i class="fa-brands fa-twitter"></i
-            ></span>
-            <span
-              class="bg-gray-100 w-[48px] h-[48px] inline-flex rounded-full items-center justify-center"
-            >
-              <i class="fa-brands fa-instagram"></i
-            ></span>
-          </div>
-        </nav>
+            <ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
 
-        <!-- HERO SECTION -->
-      </section>
-    </main>
+        <ul
+          id="menu"
+          class="bg-[#FFFEF5] md:flex md:flex-row md:w-[446px] md:h-[24px] w-full left-0 md:py-0 py-4 md:pl-0 pl-7 md:justify-evenly font-normal text-lg text-[#333333] absolute md:z-auto md:static md:opacity-100 opacity-0 top-[-400px] trasition-all ease-in-out duration-500"
+        >
+          <li
+            class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
+          >
+            Home
+          </li>
+          <li
+            class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
+          >
+            Services
+          </li>
+          <li
+            class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
+          >
+            Portfolio
+          </li>
+          <li
+            class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
+          >
+            Career
+          </li>
+          <li
+            class="hover:font-[600] hover:text-[#6D58EF] cursor-pointer duration-500"
+          >
+            About Us
+          </li>
+        </ul>
+
+        <div class="hidden md:block w-[160px] h-[48px]">
+          <span
+            class="bg-gray-100 w-[48px] h-[48px] inline-flex rounded-full items-center justify-center"
+          >
+            <i class="fa-brands fa-facebook-f"></i
+          ></span>
+          <span
+            class="bg-gray-100 w-[48px] h-[48px] inline-flex rounded-full items-center justify-center"
+          >
+            <i class="fa-brands fa-twitter"></i
+          ></span>
+          <span
+            class="bg-gray-100 w-[48px] h-[48px] inline-flex rounded-full items-center justify-center"
+          >
+            <i class="fa-brands fa-instagram"></i
+          ></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section class="bg-[#FFFEF5] w-full">
+      <div
+        class="flex md:flex-row flex-col items-center justify-center container mx-auto"
+      >
+        <div class="md:pl-16 p-6 flex-1">
+          <h1
+            class="w-full md:pt-36 pt-16 text-[#333333] font-[700] md:text-7xl text-4xl md:leading-[5rem]"
+          >
+            We are <br />
+            Creative agency
+          </h1>
+          <p class="py-8 max-w-sm">
+            Agency is one of the leading companies in Vietnam in brand
+            adevertising, marketing, public relations.
+          </p>
+          <button
+            class="bg-[#6D58EF] w-[170px] h-[47px] rounded-3xl text-white font-[700]"
+          >
+            Let's Talk
+          </button>
+        </div>
+
+        <div class="flex-1 relative flex justify-center items-center pt-4">
+          <img
+            src="img/coworkers.png"
+            class="md:w-[31.375rem] md:h-auto w-[14.6875rem] h-auto relative"
+            alt="Coworkers"
+          />
+          <div
+            class="bg-[#ffffffe5] top-[66.82px] right-[72.4px] rounded-2xl absolute w-[122px] h-[122px] xl:flex justify-center items-center hidden drop-shadow-3xl"
+          >
+            <div
+              class="rounded-full bg-[#298AEE] w-[86px] h-[86px] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-photo-film text-white text-[40px]"></i>
+            </div>
+          </div>
+          <div
+            class="bg-[#ffffffe5] -left-2 bottom-[66.8px] rounded-2xl absolute xl:flex justify-center items-center hidden drop-shadow-3xl w-[170px] h-[170px]"
+          >
+            <div
+              class="rounded-full bg-[#298AEE] w-[116px] h-[116px] flex justify-center items-center"
+            >
+              <i class="fa-solid fa-camera text-white text-[43px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ! script -->
     <script
