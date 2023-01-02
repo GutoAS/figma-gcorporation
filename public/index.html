@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- NAVBAR SECTION -->
-    <header class="sticky top-0 w-full bg-[#FFFEF5] z-10">
+    <header class="sticky top-0 w-full bg-[#FFFEF5] z-50">
       <nav
         id="nav"
         class="z-1 container mx-auto md:flex md:flex-row pt-[41px] md:items-center md:justify-between"
@@ -76,7 +76,9 @@
     </header>
 
     <!-- HOME SECTION -->
-    <section class="bg-[#FFFEF5] w-full">
+    <section
+      class="bg-[#FFFEF5] w-full relative z-10 overflow-hidden min-h-screen"
+    >
       <div
         class="flex md:flex-row flex-col items-center justify-center container mx-auto"
       >
@@ -124,6 +126,27 @@
           </div>
         </div>
       </div>
+
+      <!-- gradients -->
+      <div
+        class="absolute bg-[#FEE1AF] w-[582px] h-[582px] rounded-full blur-[250px] top-0 right-0 -z-10 hidden md:block"
+      ></div>
+      <div
+        class="w-[541px] h-[541px] bg-[rgba(170,182,250,0.8)] -z-50 absolute top-0 left-0 blur-[250px] rounded-full hidden md:block"
+      ></div>
+      <div
+        class="bg-[rgba(205,237,255,0.8)] rounded-full absolute w-[783px] h-[541px] -bottom-[50%] -z-50 right-[30%] hidden md:block blur-[250px]"
+      ></div>
+      <img
+        src="img/CombinedShape.svg"
+        alt=""
+        class="absolute top-[20%] left-[10%] -z-30 hidden md:block"
+      />
+      <img
+        src="img/CombinedShape.svg"
+        alt=""
+        class="absolute bottom-[20%] right-[10%] -z-30 hidden md:block"
+      />
     </section>
 
     <!-- ! script -->
